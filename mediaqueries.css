@@ -50,56 +50,71 @@
   @media screen and (max-width: 600px) {
     #contact,
     footer {
-      height: 40vh;
+      height: auto; /* Allow height to adjust based on content */
     }
+
     #profile {
-      height: 83vh;
+      height: auto; /* Make it auto-adjust for content */
       margin-bottom: 0;
     }
-    article {
-      font-size: 1rem;
+
+    .contact-info-upper-container {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center align the items */
+      justify-content: center;
+      gap: 1.5rem; /* Add spacing between the email and LinkedIn */
     }
+
+    .contact-info-container {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem; /* Space between the icon and text */
+    }
+
+    .contact-info-container img {
+      width: 24px; /* Adjust size of the icon */
+      height: 24px;
+    }
+
+    .contact-info-container p {
+      font-size: 1rem;
+      margin: 0;
+      text-align: center; /* Center align the text */
+    }
+
     footer nav {
       height: fit-content;
       margin-bottom: 2rem;
     }
+
     .about-containers,
     .contact-info-upper-container,
     .btn-container {
       flex-wrap: wrap;
     }
-    .contact-info-container {
-      margin: 0;
-    }
-    .contact-info-container p,
-    .nav-links li a {
-      font-size: 1rem;
-    }
-    .experience-sub-title {
-      font-size: 1.25rem;
-    }
-    .logo {
-      font-size: 1.5rem;
-    }
+
     .nav-links {
       flex-direction: column;
       gap: 0.5rem;
       text-align: center;
     }
-    .section__pic-container {
+
+    .section_pic-container {
       width: auto;
       height: 46vw;
       justify-content: center;
     }
-    .section__text__p2 {
+
+    .section_text_p2 {
       font-size: 1.25rem;
     }
+
     .title {
       font-size: 2rem;
     }
+
     .text-container {
       text-align: justify;
     }
-  }
-  
-  
+}

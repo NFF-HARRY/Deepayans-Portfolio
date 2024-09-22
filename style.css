@@ -487,16 +487,7 @@ article p {
     transform: translateY(-10px);
 }
 
-@media (max-width: 768px) {
-    .about-containers {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .details-container {
-        max-width: 100%; 
-    }
-}
 /***************contact*******************/
 
 #contact {
